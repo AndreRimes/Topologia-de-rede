@@ -2,26 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.comic-button {
+  width: 100%;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.wrapper {
+  --bg-color: #111;
+  --main-color: #fefefe;
+  position: relative;
+  width: 250px;
+  height: 36px;
+  padding: 5px;
+  background-color: #FFFDF8;
+  border: 2px solid black;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 4px 4px black;
 }
+
+.option {
+  width: 50%;
+  height: 28px;
+  position: relative;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

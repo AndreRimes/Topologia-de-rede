@@ -1,7 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
+    darkMode: ["class"],
+    content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,11 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'background': "#FFFDF8",
+        "primary": "#FFF4DA",
+        "orange": "#FFC480",
+        "red": "#FE4A60",
+        "green": "#5CF1A4",
+        "border": "#111827",
+      },
+      fontFamily: {
+        'system': ['system-ui', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;
