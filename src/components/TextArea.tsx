@@ -1,5 +1,5 @@
 
-export default function TextArea({id, label}: {id: string, label: string}) {
+export default function TextArea({id, label, value}: {id: string, label: string, value: string}) {
 
     return (
         <aside
@@ -17,11 +17,12 @@ export default function TextArea({id, label}: {id: string, label: string}) {
                 </div>
                 <p className="text-sm">bash</p>
             </div>
-            <div className="mt-4">
-                <p className="text-green-400">$ npm install next</p>
-                <p className="">+ next@10.2.3</p>
-                <p className="">added 1 package, and audited 2 packages in 3s</p>
-                <p className="text-green-400">$</p>
+            <div className="mt-4 overflow-y-auto" style={{height: "200px", whiteSpace: 'pre-wrap'}}>
+                {value.split("\n").map((line, index) => (
+                    <p key={index} className={line.startsWith("$") ? "text-green-400" : ""}>
+                        {line}
+                    </p>
+                ))}
             </div>
         </aside>
        
