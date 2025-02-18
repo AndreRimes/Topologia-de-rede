@@ -22,20 +22,20 @@ export const initialNodes = [
 
 
 export const initialEdges = [
-  { id: 'root-a1', source: 'root', target: 'a1' },
-  { id: 'root-a2', source: 'root', target: 'a2' },
+  { id: 'root-a1', source: 'root', target: 'a1', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'root-a2', source: 'root', target: 'a2', weight: Math.floor(Math.random() * 10) + 1 },
 
-  { id: 'a1-e1', source: 'a1', target: 'e1' },
-  { id: 'a1-e2', source: 'a1', target: 'e2' },
-  { id: 'a2-e3', source: 'a2', target: 'e3' },
-  { id: 'a2-e4', source: 'a2', target: 'e4' },
+  { id: 'a1-e1', source: 'a1', target: 'e1', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'a1-e2', source: 'a1', target: 'e2', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'a2-e3', source: 'a2', target: 'e3', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'a2-e4', source: 'a2', target: 'e4', weight: Math.floor(Math.random() * 10) + 1 },
 
-  { id: 'e1-h1', source: 'e1', target: 'h1' },
-  { id: 'e1-h2', source: 'e1', target: 'h2' },
-  { id: 'e2-h3', source: 'e2', target: 'h3' },
-  { id: 'e2-h4', source: 'e2', target: 'h4' },
-  { id: 'e3-h5', source: 'e3', target: 'h5' },
-  { id: 'e3-h6', source: 'e3', target: 'h6' },
-  { id: 'e4-h7', source: 'e4', target: 'h7' },
-  { id: 'e4-h8', source: 'e4', target: 'h8' },
+  { id: 'e1-h1', source: 'e1', target: 'h1', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'e1-h2', source: 'e1', target: 'h2', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'e2-h3', source: 'e2', target: 'h3', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'e2-h4', source: 'e2', target: 'h4', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'e3-h5', source: 'e3', target: 'h5', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'e3-h6', source: 'e3', target: 'h6', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'e4-h7', source: 'e4', target: 'h7', weight: Math.floor(Math.random() * 10) + 1 },
+  { id: 'e4-h8', source: 'e4', target: 'h8', weight: Math.floor(Math.random() * 10) + 1 },
 ];

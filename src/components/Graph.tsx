@@ -24,6 +24,8 @@ const NetworkGraph: React.FC<NetworkGraphProps> = ({ nodes, onPing, activePath }
           edges={initialEdges.map(edge => ({
             ...edge,
             style: getEdgeStyle(edge.id),
+            label: edge.weight.toString(), // Add this line to display the weight
+            labelStyle: { fill: 'black', fontSize: 12 } // Optional: customize label style
           }))}
           fitView
         >
