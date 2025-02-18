@@ -1,8 +1,7 @@
 "use client";
 import React from 'react';
 
-const Radio = () => {
-    const [isPing, setIsPing] = React.useState(true);
+const Radio = ({isPing, setIsPing}: {isPing: boolean, setIsPing: React.Dispatch<React.SetStateAction<boolean>>}) => {
 
     return (
         <div className="wrapper">
